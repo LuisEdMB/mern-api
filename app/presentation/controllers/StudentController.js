@@ -1,5 +1,5 @@
 const base = require('./BaseController')
-const studentService = require('../../application/StudentService')
+const studentService = require('../../application/StudentApplicationService')
 
 const GetStudents = (request, response) => base.Execute(() => studentService.GetStudents(), response)
 const GetStudent = (request, response) => base.Execute(() => studentService.GetStudent(request.params.idStudent), response)

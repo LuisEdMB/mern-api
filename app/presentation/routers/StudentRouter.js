@@ -6,7 +6,7 @@ const router = express.Router()
 router
     .get('/', studentController.GetStudents)
     .get('/:idStudent', studentController.GetStudent)
-    .post('/:idStudent', studentController.CreateStudent)
+    .post('/', studentController.CreateStudent)
     .put('/:idStudent', studentController.UpdateStudent)
 
 module.exports = router
